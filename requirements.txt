@@ -1,0 +1,4 @@
+fpdf2==2.8.8
+gradio==6.28.0
+openai==3.13.0
+python-dotenv==1.2.3
