@@ -6,6 +6,15 @@ from tools import tools
 from prompts import developer_message
 from utils import sanitize_history, handle_tool_call
 
+# Para evitar el pago de la version PRO de Hugging Face
+try:
+    import spaces
+    @spaces.GPU
+    def _zero_gpu_init():
+        pass
+except ImportError:
+    pass
+
 load_dotenv()
 api_key = os.getenv('OPENAI_API_KEY')
 MODEL = 'gpt-4o-mini'
