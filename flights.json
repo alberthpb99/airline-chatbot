@@ -1,0 +1,33 @@
+{
+  "bogotá": {
+    "medellín": "180000 COP",
+    "cali": "210000 COP",
+    "cartagena": "280000 COP",
+    "san andrés": "420000 COP",
+    "bucaramanga": "160000 COP",
+    "santa marta": "240000 COP"
+  },
+  "medellín": {
+    "bogotá": "175000 COP",
+    "cali": "195000 COP",
+    "cartagena": "250000 COP",
+    "santa marta": "270000 COP"
+  },
+  "cali": {
+    "bogotá": "200000 COP",
+    "medellín": "190000 COP",
+    "cartagena": "310000 COP",
+    "san andrés": "450000 COP"
+  },
+  "cartagena": {
+    "bogotá": "275000 COP",
+    "medellín": "245000 COP",
+    "cali": "300000 COP",
+    "san andrés": "220000 COP"
+  },
+  "barranquilla": {
+    "bogotá": "260000 COP",
+    "medellín": "250000 COP",
+    "cali": "320000 COP"
+  }
+}
