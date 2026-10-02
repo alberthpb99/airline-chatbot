@@ -45,7 +45,19 @@ def chat(message,history):
     
     return final_text
 
-demo = gr.ChatInterface(fn=chat)
+initial_chatbot = gr.Chatbot(
+    value=[
+        {
+            "role": "assistant", 
+            "content": "¡Hola! Soy el asistente virtual de AI Airlines. Puedo ayudarte a consultar precios de vuelos y generar los tickets de tu reserva.\n Cuéntame ¿Qué destino tienes planeado visitar?"
+        }
+    ]
+)
+
+demo = gr.ChatInterface(
+    fn=chat,
+    chatbot=initial_chatbot
+)
 
 if __name__ == "__main__":
     demo.launch()
